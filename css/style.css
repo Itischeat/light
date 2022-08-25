@@ -1031,7 +1031,7 @@ a.brand:focus{
 
 
 .wrapper{
-  padding-top:7rem;
+  padding-top:3rem;
   overflow-x:hidden;
 }
 
@@ -4137,17 +4137,14 @@ a.brand:focus{
 }
 .cont-foooter {
   min-width: 320px;
-  height: 150px;
+  height: 250px;
 }
 .cont-block {
+  align-items: center;
   min-width: 320px;
   text-align: center;
   margin: auto;;
 }
-.inl-blck {
-  display: flex;
-  justify-content: space-evenly;
-}
 .inl-blck p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
