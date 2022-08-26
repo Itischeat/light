@@ -4085,7 +4085,7 @@ a.brand:focus{
 
 .form-send {
   max-height: 50px;
-  min-width: 375px;
+  min-width: 500px;
   height: inherit;
   margin-top: 6vh;
   width: 375px;
