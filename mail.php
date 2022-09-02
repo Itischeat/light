@@ -1,31 +1,21 @@
-<?php 
+<?php
 
-require_once('phpmailer/PHPMailerAutoload.php');
-$mail = new PHPMailer;
-$mail->CharSet = 'utf-8';
+$phone = $_POST['number'];
+$token = "5656288083:AAHOtWAQCe-yIloCGlgnPKHwU3Hbb6vJETQ";
+$chat_id = "-611408498";
+$arr = array(
+    'number' => $phone
+);
 
-$name = $_POST['number'];
+foreach($arr as $key => $value) {
+  $txt .= "<b>".$key."</b> ".$value."%0A";
+};
 
+$sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
 
-$mail->isSMTP();                                      
-$mail->Host = 'smtp.mail.ru';  																							
-$mail->SMTPAuth = true;                               
-$mail->Username = 'pahaaa@bk.ru';
-$mail->Password = '12131415q';
-$mail->SMTPSecure = 'ssl';                            
-$mail->Port = 465;
-
-$mail->setFrom('pahaaa@bk.ru');
-$mail->addAddress('info@ivonindesign.ru'); 
-$mail->isHTML(true);
-
-$mail->Subject = 'Новый покупатель';
-$mail->Body    = 'Человек оставил заявку, его телефон ' .$phone. '';
-$mail->AltBody = '';
-
-if(!$mail->send()) {
-    echo 'Error';
+if ($sendToTelegram) {
+  echo 'сообщение'
 } else {
-    header('location: index.html');
+  echo "Error";
 }
 ?>
