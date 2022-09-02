@@ -1,31 +1,29 @@
-<?php
-$name = $_POST["name"];
-$email = $_POST["email"];
-$subject = $_POST["subject"];
-$message = $_POST["message"];
+<?php 
+
+require_once('phpmailer/PHPMailerAutoload.php');
+$mail = new PHPMailer;
+$mail->CharSet = 'utf-8';
+
+$name = $_POST['number'];
 
 
-$EmailTo = "jamp.ivonin@bk.ru";
-$Title = "New Message Received";
+$mail->isSMTP();                                      
+$mail->Host = 'smtp.mail.ru';  																							
+$mail->SMTPAuth = true;                               
+$mail->Username = 'pahaaa@bk.ru';
+$mail->Password = '12131415q';
+$mail->SMTPSecure = 'ssl';                            
+$mail->Port = 465;
 
-// prepare email body text
-$Fields .= "Name: ";
-$Fields .= $name;
-$Fields .= "\n";
+$mail->setFrom('pahaaa@bk.ru');
+$mail->addAddress('info@ivonindesign.ru'); 
+$mail->isHTML(true);
 
-$Fields.= "Email: ";
-$Fields .= $email;
-$Fields .= "\n";
+$mail->Subject = 'Новый покупатель';
+$mail->Body    = 'Человек оставил заявку, его телефон ' .$phone. '';
+$mail->AltBody = '';
 
-$Fields.= "Subject: ";
-$Fields .= $subject;
-$Fields .= "\n";
-
-$Fields .= "Message: ";
-$Fields .= $message;
-$Fields .= "\n";
-
-
-// send email
-$success = mail($EmailTo,  $Title,  $Fields, "From:".$email);
-
+if(!$mail->send()) {
+    echo 'Error';
+}
+?>
