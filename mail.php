@@ -16,7 +16,7 @@ $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
 
 $mail->setFrom('pahaaa@bk.ru');
-$mail->addAddress('jamp.ivonin@bk.ru'); 
+$mail->addAddress('info@ivonindesign.ru'); 
 $mail->isHTML(true);
 
 $mail->Subject = 'Новый покупатель';
