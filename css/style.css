@@ -4148,3 +4148,58 @@ a.brand:focus{
 .inl-blck p {
   font-size: 1.5rem;
 }
+.container15 {
+  border: 1px solid #cee002;
+  margin: 15vh auto auto auto;
+  position: relative;
+  min-width: 320px;
+  max-width: 1140px;
+  min-height: 450px;
+  background-color: #fff;
+  box-shadow: 2px 4px 4px rgba(0,0,0,0.1);
+}
+.wrapper15 {
+  position: relative;
+  height: 650px;
+}
+.wrapper15 > div {
+  height: 325px
+}
+.wrapper15 > div > h1 {
+  padding-top: 5%;
+  text-align: center;
+}
+.wrapper15 > div > p {
+  font-size: 20px;
+  color: #000;
+  line-height: normal;
+  text-align: center;
+  margin-top: 5%;
+}
+.wrapper15 > div > form {
+  margin-top: 5%;
+}
+.inpt {
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+}
+.inpt > input {
+  min-width: 130px;
+  height: 45px;
+  margin: 10px;
+}
+.sumbat {
+  height: 45px;
+  color: #000;
+  width: 200px;
+  border: 1px solid #cee002;
+  background: none;
+  display: flex;
+  margin: 10px auto auto auto;
+}
+.sumbat:hover {
+  color: white;
+  background-color: #cee002;
+  transition: ease-in-out 0.5s;
+}
