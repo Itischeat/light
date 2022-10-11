@@ -4058,30 +4058,21 @@ a.brand:focus{
 #pic1 {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(https://thumb.tildacdn.com/tild3831-3332-4866-b735-613333386530/-/cover/540x280/center/center/-/format/webp/_100000.jpg);
+  background-image: url(../potfolio/ЛИЦА_ПОРТФОЛИО/жк_Фили_Сити.JPG);
 }
 #pic2 {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(https://thumb.tildacdn.com/tild6538-3035-4630-a563-376136323530/-/format/webp/2.jpg);
+  background-image: url(../potfolio/ЛИЦА_ПОРТФОЛИО/жк_Лесная_отрада.JPG);
 }#pic3 {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(https://thumb.tildacdn.com/tild3332-3962-4063-b830-343034376330/-/format/webp/photo.jpg);
+  background-image: url(../potfolio/ЛИЦА_ПОРТФОЛИО/жк_Фреш.PNG);
 }#pic4 {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(https://thumb.tildacdn.com/tild3132-6362-4661-a431-643536333561/-/format/webp/2.jpg);
-}#pic5 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(https://thumb.tildacdn.com/tild3731-3637-4661-b565-323036386161/-/format/webp/photo.jpg);
-}#pic6 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(https://thumb.tildacdn.com/tild6133-3430-4231-b131-353332636561/-/format/webp/2.jpg);
+  background-image: url(../potfolio/ЛИЦА_ПОРТФОЛИО/жк_Румянцево_парк.JPG);
 }
-
 .form-send {
   max-height: 50px;
   min-width: 500px;
